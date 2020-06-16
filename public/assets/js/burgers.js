@@ -19,7 +19,7 @@ $(document).ready(function() {
           klass="btn-danger delete"
         }
   
-        var new_elem = "<div class='row burger-row'><div class='col-md-9 text-center'>"+burgers[i].id+". "+burgers[i].burger_name+"</div><div class='col-md-3 text-center'><button type='button' class='btn "+klass+"' data-id='"+burgers[i].id+"'>"+text+"</button></div></div>"
+        var new_elem = "<li class='list-group-item text-center my-2'>"+burgers[i].id + ". " +burgers[i].burger_name+"<button type='button' class='btn burger-btn mr-0 vl-auto"+klass+"' data-id='"+burgers[i].id+"'><i class='fas fa-trash'></i>"+text+"</button></li>";
   
         elem.append(new_elem)
   

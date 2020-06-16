@@ -8,7 +8,9 @@
     <link rel="stylesheet"
         href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
         integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/70b95019d0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/img/fastfood-black-18dp.svg" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css" />
 </head>
 
 <body>
@@ -23,10 +25,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center enter_section">
-                <p>Enter a burger you want to eat & click the "Submit" button.</p>
+                <p>Submit your burger!</p>
                 <form class="add-burger">
-                    <input type="text" class="form-control" name="burger_name" value="" id="burger_name" />
-                    <button type="submit" class="btn btn-primary" id="text-enter-button"> Submit </button>
+                    <input type="text" class="form-control" name="burger_name" value="" id="burger_name"
+                        placeholder="Enter a burger you want to eat & click the 'Submit' button." />
+                    <button type="submit" class="btn btn-primary" id="text-enter-button"><i class="fas fa-hamburger"></i> Submit </button>
                 </form>
             </div>
         </div>
@@ -34,17 +37,21 @@
 
     <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center enter_section">
-            <p>Eat and Delete a burger.</p>
-          </div>
+            <div class="col-md-12 text-center enter_section">
+                <p>Devour and Delete a burger.</p>
+            </div>
         </div>
         <div class="row">
-          <div class="col-md-6" class="task" id="not_devoured"></div>
-          <div class="col-md-6" class="task" id="devoured"></div>
+            <div class="col-md-6">
+                <ol class="list-group task" id="not_devoured"></ol>
+            </div>
+            <div class="col-md-6">
+                <ol class="list-group task" id="devoured"></ol>
+            </div>
         </div>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="/assets/js/burgers.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/burgers.js"></script>
 </body>
 
 </html>
