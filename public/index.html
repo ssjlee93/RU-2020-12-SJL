@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat the burger</title>
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" id="banner">
+                <img src="./assets/img/burger.png" alt="burger" />
+                <h1> Eat the burger</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center enter_section">
+                <p>Enter a burger you want to eat & click the "Submit" button.</p>
+                <form class="add-burger">
+                    <input type="text" class="form-control" name="burger_name" value="" id="burger_name" />
+                    <button type="submit" class="btn btn-primary" id="text-enter-button"> Submit </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center enter_section">
+            <p>Eat and Delete a burger.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6" class="task" id="not_devoured"></div>
+          <div class="col-md-6" class="task" id="devoured"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="/assets/js/burgers.js"></script>
+</body>
+
+</html>
